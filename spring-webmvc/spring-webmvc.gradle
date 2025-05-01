@@ -13,7 +13,7 @@ dependencies {
 	compileOnly("com.google.code.findbugs:findbugs") {  // for groovy-templates
 		exclude group: "dom4j", module: "dom4j"
 	}
-	optional(project(":spring-context-support"))  // for FreeMarker support
+	api(project(":spring-context-support"))  // for FreeMarker support
 	optional(project(":spring-oxm"))
 	optional("com.fasterxml.jackson.core:jackson-databind")
 	optional("com.fasterxml.jackson.dataformat:jackson-dataformat-cbor")

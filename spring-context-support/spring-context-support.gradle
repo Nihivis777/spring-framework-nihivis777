@@ -4,8 +4,8 @@ dependencies {
 	api(project(":spring-beans"))
 	api(project(":spring-context"))
 	api(project(":spring-core"))
-	optional(project(":spring-jdbc"))  // for Quartz support
-	optional(project(":spring-tx"))  // for Quartz support
+	api(project(":spring-jdbc"))  // for Quartz support
+	api(project(":spring-tx"))  // for Quartz support
 	optional("com.github.ben-manes.caffeine:caffeine")
 	optional("jakarta.activation:jakarta.activation-api")
 	optional("jakarta.mail:jakarta.mail-api")

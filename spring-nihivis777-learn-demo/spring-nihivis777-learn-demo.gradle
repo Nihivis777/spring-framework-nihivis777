@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.nihivis.learn.demo'
+version = '6.2.6'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    implementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
